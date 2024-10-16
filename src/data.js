@@ -1,4 +1,7 @@
 export const moviesData = [
+
+
+	
 	{
 		id: 1,
 		title: "Her",

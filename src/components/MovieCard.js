@@ -3,6 +3,7 @@ import { Button, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import "./MOvieCard.css";
+import { Link } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
 
@@ -32,7 +33,7 @@ const MovieCard = ({ movie }) => {
           <div className='rating'>
             {Stars(movie.rate)}  {/* Display star rating */}
           </div>
-          <Button variant="primary">Go somewhere</Button>
+          <Link to={`/movie/${movie.id}`} ><Button variant="primary">Go somewhere</Button></Link>
         </Card.Body>
       </Card>
     </div>
